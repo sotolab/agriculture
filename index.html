@@ -28,6 +28,18 @@
 
 		var contractAddress = "0x8192eb3187a406ed65eabd0b3d1b49f0d455dc37";
 		var vc = web3.eth.contract(abi).at(contractAddress);
+		
+		//clearList();
+		//showList();
+		
+		function clearList() {
+      	            // 원래 테이블 지우기
+		    var Parent = document.getElementById("table1");
+		    while (Parent.hasChildNodes()) {
+			Parent.removeChild(Parent.firstChild);
+		    }
+		}
+		
 
 		function showList() {
 			var table = document.getElementById("table1");
